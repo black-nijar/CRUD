@@ -10,11 +10,11 @@ class List extends Component {
         return (
             <div>
                <div><h4>User list</h4></div>
-                { users.map((user) => (
-                    <div key={user.id}>
+                { users.map((user,index) => (
+                    <div key={index}>
                        {
-                        user.edit ? <EditUser user={user} key={user.id} /> :
-                        <Users key={user.id} user={user} />
+                        user.edit ? <EditUser user={user} key={index} /> :
+                        <Users key={index} user={user} />
                         }
                     </div>
              ))}

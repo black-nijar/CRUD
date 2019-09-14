@@ -6,9 +6,9 @@ class App extends Component {
   render() {
     return (
       <div className='ui App container'>
-        <div class="ui two column grid">
-              <div class="column">
-                <div class="ui segment">
+        <div className="ui two column grid">
+              <div className="column">
+                <div className="ui segment">
                   <Form/>
                 </div>
               </div>
