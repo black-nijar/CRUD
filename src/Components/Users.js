@@ -3,19 +3,19 @@ import { connect } from 'react-redux'
 
 const  Users= (props) => {
     return (
-     
-       <div className='card'>
-          <div className='card-panel'>
+      <div>
+         <div className='ui  segment'>
+           <div className=''>
                 <div> Name: { props.user.name }</div>
                 <span>Email id: { props.user.email }</span> <br/><br/>
-                <button className='green btn-small'
+                <button className='ui green button'
                         onClick={()=>props.dispatch({
                             type: 'EDIT_USER',
                             id: props.user.id
                         })}>
                     Edit
                 </button>
-                <button className='red btn-small'
+                <button className='ui red button'
                         onClick={()=>props.dispatch({
                             type: 'DELETE_USER',
                             id: props.user.id
@@ -23,7 +23,9 @@ const  Users= (props) => {
                         Delete
                 </button>
             </div>
-       </div>
+         </div>  <br/>
+      </div>
+       
     )
 }
 

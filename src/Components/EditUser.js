@@ -20,8 +20,8 @@ class EditUser extends Component {
 
     render() {
         return (
-            <div className='ui form'>
-              <form onSubmit={this.handleEdit}>
+            <div className='ui segment'>
+              <form onSubmit={this.handleEdit} className='ui form'>
               <div>
                   <input type='text'
                        ref={(input)=>this.name = input}
@@ -36,10 +36,10 @@ class EditUser extends Component {
                 />  
               </div>
                 <br/>
-                <button className='blue btn'>
+                <button className='ui blue button'>
                     Update
-                </button>
-              </form>
+                </button><br/>
+              </form><br/>
             </div>
         )
     }

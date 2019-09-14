@@ -23,7 +23,7 @@ class Form extends Component {
     render() {
         return (
             <div className='ui form'>
-              <div><h4>Form</h4></div>
+              <div><h1>Form</h1></div>
               <form onSubmit={this.handleSubmit}>
                 <div>
                   <label htmlFor='name'>Name</label>
