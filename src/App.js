@@ -7,22 +7,18 @@ class App extends Component {
     return (
       <div className='ui App container'>
         <div className="ui two column grid">
-              <div className="column">
-                <div className="ui segment">
-                  <Form/>
-                </div>
-              </div>
-              <div className='column'>
-                 <div className=''>
-                    <List/>
-                 </div>
-               
-              </div>
-              
+          <div className="column">
+            <div className="ui segment">
+              <Form />
             </div>
+          </div>
+          <div className='column'>
+            <div className=''>
+              <List />
+            </div>
+          </div>
+        </div>
       </div>
-     
-      
     )
   }
 }

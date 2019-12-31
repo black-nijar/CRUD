@@ -27,24 +27,30 @@ class Form extends Component {
               <form onSubmit={this.handleSubmit}>
                 <div>
                   <label htmlFor='name'>Name</label>
-                  <input name='name'
-                         component='input'
-                         type='text'
-                         placeholder='Name'
-                         ref={(input)=> this.getName = input}
+                  <input 
+                    name='name'
+                    component='input'
+                    type='text'
+                    placeholder='Name'
+                    ref={(input)=> this.getName = input}
+                    required
                   /> 
                 </div><br/>
                 <div>
-                    <label htmlFor='email'>Email</label>
-                    <input
-                        name='email'
-                        component='input'
-                        type='email'
-                        placeholder='Email Id'
-                        ref={(input)=> this.getEmail = input}
-                    />
+                  <label htmlFor='email'>Email</label>
+                  <input
+                    name='email'
+                    component='input'
+                    type='email'
+                    placeholder='Email Id'
+                    ref={(input)=> this.getEmail = input}
+                    required
+                  />
                 </div><br/>
-                <button className='ui blue button'>Submit</button>
+                <button
+                   className='ui blue button'>
+                    Submit
+                </button>
               </form>
             </div>
         )
